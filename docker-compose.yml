@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  jeremiah-challenge:
+    container_name: jeremiah-challenge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8080'
