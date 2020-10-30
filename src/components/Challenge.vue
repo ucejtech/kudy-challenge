@@ -58,7 +58,7 @@
         >
           Create Shape
         </button>
-        <button class="error" @click.stop="clearStorage()">
+        <button class="error" @click.prevent="clearStorage()">
           Clear Storage
         </button>
       </form>
@@ -147,6 +147,7 @@ export default {
   methods: {
     clearStorage() {
       localStorage.clear();
+      window.location.reload();
     },
     setColor(color) {
       const elems = document.querySelectorAll('.color');
