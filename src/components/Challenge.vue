@@ -177,7 +177,9 @@ export default {
       const inputedShape = model.shape;
       const inputedDimensions = model.dimensions;
 
-      const shapeObj = shapes.find((shape) => shape.name === inputedShape);
+      const shapeObj = shapes.find(
+        (shape) => shape.name.toLowerCase() === inputedShape.toLowerCase()
+      );
 
       if (shapeObj) {
         let svgNamespace = 'http://www.w3.org/2000/svg';
