@@ -4,8 +4,8 @@
       <label class="title">Kudy Challenge</label>
       <br />
       <b class="important"
-        >N.B: For Triangle, pentagon and <br />
-        hexagon, use the polygon shape and select <br />
+        >N.B: For Triangle and pentagon <br />
+        use the polygon shape and select <br />
         the correct number of sides</b
       >
       <form>
