@@ -1,10 +1,10 @@
 version: '3.7'
 
 services:
-  jeremiah-challenge:
-    container_name: jeremiah-challenge
+  kudy-challenge:
+    container_name: kudy-challenge
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '8081:8080'
+      - '80:80'

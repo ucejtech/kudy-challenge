@@ -14,8 +14,12 @@ export function generateCoordinates(documentHeight, documentWidth, { width, heig
 export function polygonCoordinateGenerator(documentWidth, documentHeight, createdShape, polygonNumberOfSides) {
 
     let points = '';
-
-    const bb = createdShape.getBBox();
+    const bb = createdShape.getBBox ? createdShape.getBBox() : {
+        x: 0,
+        y: 0,
+        width: 800,
+        height: 900
+    }
     const bbw = bb.width;
     const bbh = bb.height;
     const initialPosX = (
@@ -39,7 +43,7 @@ export function polygonCoordinateGenerator(documentWidth, documentHeight, create
             return coordinate
         }
     }, null)
-    console.log(points)
+
     return points;
 }
 
