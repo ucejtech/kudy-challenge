@@ -1,9 +1,6 @@
-# Kudy Challenge
+# Shape Generator
 
 ![Deploy to github pages](https://github.com/ucejtech/kudy-challenge/workflows/Deploy%20to%20github%20pages/badge.svg?branch=main)
-
-Challenge link:
-https://www.notion.so/Frontend-Challenge-bad5b36ad7f5457ab282149e7463162c
 
 ## Aim
 
